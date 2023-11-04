@@ -1,0 +1,66 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model Encuesta
+
+<div class="conta">
+    <div class="conta2">
+        <form method="POST" action="/">
+            <div class="divext">
+                <label asp-for="Name">Your Name:</label>
+                <input class="width" type="text" asp-for="Name">
+            </div>
+            <div>
+                <span class="validacion" asp-validation-for="Name"></span>
+            </div>
+            <div class="divext">
+                <label asp-for="Location">Dojo Location:</label>
+                <select class="width" asp-for="Location">
+                    <option value="-">-</option>
+                    <option value="Santiago">Santiago</option>
+                    <option value="Valparaiso">Valparaiso</option>
+                    <option value="Coquimbo">Coquimbo</option>
+                </select>
+            </div>
+            <div>
+                <span class="validacion" asp-validation-for="Location"></span>
+            </div>
+            <div class="divext">
+                <label asp-for="FavoriteLanguage">Favorite Languages:</label>
+                <select class="width" asp-for="FavoriteLanguage">
+                    <option value="-">-</option>
+                    <option value="C#">C#</option>
+                    <option value="Python">Python</option>
+                </select>
+            </div>
+            <div>
+                <span class="validacion" asp-validation-for="FavoriteLanguage"></span>
+            </div>
+
+
+            <div class="divext">
+                <label asp-for="Date">Date:</label>
+                <input class="width" type="date" asp-for="Date">
+            </div>
+            <div>
+                <span class="validacion" asp-validation-for="Date"></span>
+            </div>
+
+
+            <div>
+                <label asp-for="Comment">Comment (optional):</label>
+                <div>
+                    <span class="validacion" asp-validation-for="Comment"></span>
+                </div>
+                <div>
+                    <textarea class="comment" asp-for="Comment"></textarea>
+                </div>
+            </div>
+        
+            <button >Submit</button>
+
+        </form>
+        
+    </div>
+</div>

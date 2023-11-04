@@ -1,0 +1,57 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.conta {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 20px
+}
+
+.conta2 {
+  width: 400px;
+}
+
+.h1 {
+  margin-bottom: 30px;
+}
+.divext {
+  display: flex;
+  justify-content: space-between;
+}
+
+.validacion {
+  color: red;
+}
+
+.width {
+  width: 170px;
+  height: auto;
+}
+
+.comment {
+  height: 70px;
+  width: 400px;
+}
+
+.boton {
+  float: right;
+  box-shadow: 3px 3px;
+  margin: 15px 5px 5px 5px;
+}

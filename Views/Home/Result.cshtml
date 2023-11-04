@@ -1,0 +1,35 @@
+@{
+    ViewData["Title"] = "Result";
+}
+
+
+<div class="conta">
+    <div class="conta2">
+        <h1 class="h1">Submitted Info</h1>
+        <div class="divext">
+            <p>Name:</p>
+            <p class="width">@ViewBag.Name</p>
+        </div>
+        <div class="divext">
+            <p>Dojo Location:</p>
+            <p class="width">@ViewBag.Location</p>
+        </div>
+        <div class="divext">
+            <p>Favorite Language:</p>
+            <p class="width">@ViewBag.FavoriteLanguage</p>
+        </div>
+
+
+        <div class="divext">
+            <p>Date:</p>
+            <p class="width">@ViewBag.Date.ToString("dd-MM-yyyy")</p>
+        </div>
+
+
+        <div class="divext">
+            <p>Comment:</p>
+            <p class="width">@ViewBag.Comment</p>
+        </div>
+    <button class="boton" onclick="window.location.href='/'">Go Back</button>
+    </div>
+</div>
